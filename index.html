@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosjektoppgave: Pietisme og protestantiske bevegelser</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title-main">Pietisme og protestantiske bevegelser</h1>
+            <p class="title-sub">Prosjektoppgave: Vekkelser, organisasjoner og bevegelser innen protestantismen</p>
+        </div>
+        <div class="presentation-progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-scroll"></i> Presentasjonsmeny</h3>
+            <div class="theme-indicator" id="theme-indicator"></div>
+        </div>
+        <ul>
+            <li onclick="loadTheme('intro')" class="nav-item active" data-slide="1">
+                <i class="fas fa-star"></i>
+                <div class="nav-content">
+                    <span class="nav-title">Introduksjon</span>
+                    <span class="nav-desc">Pietismens opprinnelse og kjennetegn</span>
+                </div>
+            </li>
+            <li onclick="loadTheme('spener')" class="nav-item" data-slide="2">
+                <i class="fas fa-church"></i>
+                <div class="nav-content">
+                    <span class="nav-title">Philipp Spener</span>
+                    <span class="nav-desc">Herrnhut-pietismens far</span>
+                </div>
+            </li>
+            <li onclick="loadTheme('zinzendorf')" class="nav-item" data-slide="3">
+                <i class="fas fa-hands-praying"></i>
+                <div class="nav-content">
+                    <span class="nav-title">Nikolaus Zinzendorf</span>
+                    <span class="nav-desc">Herrnhut-bevegelsen og misjon</span>
+                </div>
+            </li>
+            <li onclick="loadTheme('hauge')" class="nav-item" data-slide="4">
+                <i class="fas fa-book"></i>
+                <div class="nav-content">
+                    <span class="nav-title">Hans Nielsen Hauge</span>
+                    <span class="nav-desc">Norsk haugianisme og vekkelse</span>
+                </div>
+            </li>
+            <li onclick="loadTheme('metodisme')" class="nav-item" data-slide="5">
+                <i class="fas fa-cross"></i>
+                <div class="nav-content">
+                    <span class="nav-title">Metodismen</span>
+                    <span class="nav-desc">John Wesley og metodistbevegelsen</span>
+                </div>
+            </li>
+            <li onclick="loadTheme('arv')" class="nav-item" data-slide="6">
+                <i class="fas fa-history"></i>
+                <div class="nav-content">
+                    <span class="nav-title">Pietismens Arv</span>
+                    <span class="nav-desc">Påvirkning på moderne protestantisme</span>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="timeline">
+            <h4><i class="fas fa-timeline"></i> Tidslinje</h4>
+            <div class="timeline-bar">
+                <div class="timeline-progress" id="timeline-progress"></div>
+            </div>
+            <div class="timeline-labels">
+                <span>1600</span>
+                <span>1700</span>
+                <span>1800</span>
+                <span>1900</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="slide-container">
+            <section id="content" class="slide active">
+                <!-- Innhold lastes dynamisk med JavaScript -->
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-title">Prosjektoppgave: Pietisme og protestantiske bevegelser</span>
+                <span class="footer-subtitle">Vekkelser, organisasjoner og bevegelser innen protestantismen</span>
+            </div>
+            <div class="footer-center">
+                <div class="presentation-time">
+                    <i class="fas fa-clock"></i>
+                    <span id="current-time">00:00</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
